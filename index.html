@@ -12,8 +12,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;300;400;600;700&display=swap"
       rel="stylesheet" />
+
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
     <!-- simplyCountdown -->
     <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
@@ -26,12 +31,12 @@
       id="hero"
       class="hero w-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-black fw-bold">
       <main>
-        <h4>Kepada Bapak/Ibu/Saudara/i</h4>
-        <h4>....</h4>
         <h1>Dimas & Yuli</h1>
-        <p>Akan melangsungkan resepsi pernikahan dalam:</p>
+        <p>Akan melangsungkan akad pernikahan dalam:</p>
         <div class="simply-countdown"></div>
-        <a href="#undangan" class="btn btn-lg mt-4">Lihat Undangan</a>
+        <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()"
+          >Lihat Undangan</a
+        >
       </main>
     </section>
 
@@ -67,9 +72,8 @@
               <a class="nav-link" href="#home">Home</a>
               <a class="nav-link" href="#info">Info</a>
               <a class="nav-link" href="#story">Story</a>
-              <a class="nav-link" href="#story">Gallery</a>
-              <a class="nav-link" href="#story">RSVP</a>
-              <a class="nav-link" href="#story">Gifts</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#gifts">Gifts</a>
             </div>
           </div>
         </div>
@@ -117,6 +121,8 @@
             </div>
           </div>
 
+          <span class="heart"><i class="bi bi-heart-fill"></i></span>
+
           <div class="col-lg-6">
             <div class="row">
               <div class="col-4">
@@ -145,10 +151,261 @@
       </div>
     </section>
 
+    <section class="info" id="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Informasi Acara</h2>
+            <p class="alamat">
+              Alamat: Jalan Palmerah gg. Palem II No. 21 RT 002 / RW 002
+              Palmerah, Palmerah, Jakarta Barat
+            </p>
+            <a
+              href="https://maps.app.goo.gl/WD5ezeAea83M346d8"
+              target="_blank"
+              class="btn btn-light btn-sm my-4"
+              >Klik untuk membuka PETA</a
+            >
+            <p class="description">
+              Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di
+              tujuan namun tidak ada tanda-tanda sedang dilangsungkan
+              pernikahan, boleh jadi Anda salah jadwal, atau salah tempat
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">Akad Nikah</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>10.00 - 12.00</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar2-week d-block"></i>
+                    <span>Minggu, 18 Februari 2024</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                Saat akad diharapkan untuk kondusif menjaga kekhidmatan dan
+                kekhusyuan seluruh prosesi.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Story Line 0f Our Love</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Adipisci, sint enim iste labore quisquam repudiandae.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <li>
+                <div
+                  class="timeline-image"
+                  style="background-image: url(img/gedung-sekolah.jpg)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Pertama bertemu</h3>
+                    <span>1 Juni 2013</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Debitis consequatur, numquam dolore laboriosam voluptas
+                      et!
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div
+                  class="timeline-image"
+                  style="background-image: url(img/gedung-sekolah.jpg)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Pacaran</h3>
+                    <span>18 Juni 2019</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Debitis consequatur, numquam dolore laboriosam voluptas
+                      et!
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="timeline-image"
+                  style="background-image: url(img/gedung-sekolah.jpg)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Pacaran</h3>
+                    <span>18 Juni 2019</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Debitis consequatur, numquam dolore laboriosam voluptas
+                      et!
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Photo Gallery</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Adipisci, sint enim iste labore quisquam repudiandae.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
+          <div class="col mt-3">
+            <a
+              href="img/gallery/both.png"
+              data-toggle="lightbox"
+              data-caption="This describes the image"
+              data-gallery="mygallery">
+              <img
+                src="img/gallery/thumbnail/boththumb.png"
+                alt="boththumb"
+                class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gallery/dimas.jpg"
+              data-toggle="lightbox"
+              data-caption="This describes the image"
+              data-gallery="mygallery">
+              <img
+                src="img/gallery/thumbnail/dimasthumb.png"
+                alt="boththumb"
+                class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gallery/yuli.jpg"
+              data-toggle="lightbox"
+              data-caption="This describes the image"
+              data-gallery="mygallery">
+              <img
+                src="img/gallery/thumbnail/yulithumb.png"
+                alt="boththumb"
+                class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gallery/yuli.jpg"
+              data-toggle="lightbox"
+              data-caption="This describes the image"
+              data-gallery="mygallery">
+              <img
+                src="img/gallery/thumbnail/yulithumb.png"
+                alt="boththumb"
+                class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gifts" class="gifts">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>ungkapan tanda kasih</span>
+            <h2>Kirim Hadiah</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium mollitia maxime suscipit odio sunt dolores similique,
+              laborum eveniet amet ex magnam ipsum inventore saepe porro iure!
+              Beatae nihil quasi ut.
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center text-center">
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="fw-bold">BCA</div>
+                01933844782 a/n Dimas Aditya Nugroho
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <small class="block"
+              >&copy; 2023 Dimas&Yuli Wedding. All Right Reserved.</small
+            >
+            <small class="block"
+              >Design by
+              <a href="https://instagram.com/dimas.nugroho17"
+                >@dimas.nugroho17</a
+              ></small
+            >
+            <ul class="mt-2">
+              <li>
+                <a href="https://instagram.com/dimas.nugroho17">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="audio-container">
+      <audio id="song" autoplay loop>
+        <source src="audio/arilasso-cintaterakhir.mp3" type="audio/mp3" />
+      </audio>
+      <div class="audio-icon-wrapper" style="display: none">
+        <i class="bi bi-disc"></i>
+      </div>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
 
     <script>
       simplyCountdown(".simply-countdown", {
@@ -166,6 +423,73 @@
           seconds: { singular: "second", plural: "seconds" },
         },
       });
+    </script>
+
+    <script>
+      const stickyTop = document.querySelector(".sticky-top");
+      const offcanvas = document.querySelector(".offcanvas");
+
+      if (offcanvas) {
+        offcanvas.addEventListener("show.bs.offcanvas", function () {
+          stickyTop.style.overflow = "visible";
+        });
+        offcanvas.addEventListener("hidden.bs.offcanvas", function () {
+          stickyTop.style.overflow = "hidden";
+        });
+      }
+    </script>
+
+    <script>
+      const rootElement = document.querySelector(":root");
+      const audioWrapper = document.querySelector(".audio-icon-wrapper");
+      const song = document.querySelector("#song");
+      const audioIcon = document.querySelector(".audio-icon-wrapper i");
+      let isPlaying = false;
+
+      function disableScroll() {
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function () {
+          window.scrollTo(scrollTop, scrollLeft);
+        };
+
+        rootElement.style.scrollBehavior = "auto";
+      }
+
+      function enableScroll() {
+        window.onscroll = function () {};
+        rootElement.style.scrollBehavior = "smooth";
+        // localStorage.setItem("opened", "true");
+        playAudio();
+      }
+
+      function playAudio() {
+        song.volume = 0.3;
+        if (audioWrapper) {
+          audioWrapper.style.display = "flex";
+        }
+        song.play();
+        isPlaying = true;
+      }
+
+      audioWrapper.onclick = function () {
+        if (isPlaying) {
+          song.pause();
+          audioIcon.classList.remove("bi-disc");
+          audioIcon.classList.add("bi-pause-circle");
+        } else {
+          song.play();
+          audioIcon.classList.add("bi-disc");
+          audioIcon.classList.remove("bi-pause-circle");
+        }
+
+        isPlaying = !isPlaying;
+      };
+
+      // if (!localStorage.getItem("opened")) {
+      disableScroll();
+      // }
     </script>
   </body>
 </html>
